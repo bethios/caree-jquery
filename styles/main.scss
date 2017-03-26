@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper{
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.selectClips {
+  display: grid;
+}
+
+@media only screen and (min-width: 600px) {
+  .selectClips{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media only screen and (min-width: 1020px) {
+  .selectClips{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .reel{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .clips{
+
+  }
+
+  iframe .clips{
+
+  }
+}
+  
+
