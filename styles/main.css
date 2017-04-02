@@ -1,22 +1,40 @@
 * {
   box-sizing: border-box; }
 
+body {
+  margin: 0; }
+
+body :nth-child(even) {
+  background-color: #393d3f;
+  color: #f8f4e3; }
+
+body :nth-child(odd) {
+  background-color: #706c61;
+  color: #f8f4e3; }
+
 .wrapper {
   display: grid;
   grid-gap: 1rem; }
 
-.selectClips {
-  display: grid; }
+.about {
+  display: grid;
+  grid-template-columns: 1fr; }
 
-@media only screen and (min-width: 600px) {
+.selectClips {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+@media only screen and (min-width: 768px) {
   .selectClips {
-    grid-template-columns: repeat(2, 1fr); } }
-@media only screen and (min-width: 1020px) {
+    grid-template-columns: repeat(2, 1fr); }
+
+  .about {
+    grid-template-columns: 2fr 1fr; } }
+@media only screen and (min-width: 1224px) {
   .selectClips {
     grid-template-columns: repeat(3, 1fr); }
 
-  .reel {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3; } }
+  .about {
+    grid-template-columns: 2fr 1fr; } }
 
 /*# sourceMappingURL=main.css.map */
