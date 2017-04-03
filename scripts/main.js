@@ -1,4 +1,4 @@
-$("#resumeOpen").click(function(){
+$(".resumeOpen").click(function(){
    $("#resumeView").css("display", "block" );
 });
 
