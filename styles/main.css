@@ -56,9 +56,6 @@ h2 {
     grid-template-columns: 1fr 2fr; } }
 @media only screen and (min-width: 1224px) {
   .selectClips {
-    grid-template-columns: repeat(3, 1fr); }
-
-  .about {
-    grid-template-columns: 2fr 1fr; } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 /*# sourceMappingURL=main.css.map */

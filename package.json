@@ -1,0 +1,21 @@
+{
+  "name": "caree-jquery",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bethios/caree-jquery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bethios/caree-jquery/issues"
+  },
+  "homepage": "https://github.com/bethios/caree-jquery#readme"
+}
