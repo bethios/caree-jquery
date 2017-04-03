@@ -8,16 +8,41 @@
   height: 100%;
   overflow: auto; }
 
+.download {
+  display: inline;
+  float: left;
+  margin: 15px; }
+
+.download:hover {
+  background-color: #e5446d;
+  color: #f8f4e3; }
+
 .close {
   color: #393d3f;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 15px; }
 
 .close:hover,
 .close:focus {
   color: #e5446d;
   text-decoration: none;
   cursor: pointer; }
+
+.modal-content {
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  border-color: #393d3f;
+  border-width: 1px; }
+
+.resumeView {
+  display: grid;
+  grid-template-columns: 10fr 1fr; }
+
+@media only screen and (min-width: 768px) {
+  .modal-content {
+    width: 70vw; } }
 
 /*# sourceMappingURL=modal.css.map */

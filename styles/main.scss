@@ -8,15 +8,41 @@ body{
   margin: 0;
 }
 
-body :nth-child(even){
-  background-color: $color1;
-  color:$color3;
+header{
+  height: 60vh;
+  background-image: url("../assets/set.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 70%;
 }
 
-body :nth-child(odd){
+.about,
+.work,
+.contact
+{
+  background-color: $color1;
+  color:$color3;
+  padding: 25px;
+}
+
+.theList,
+.selectClips
+{
   background-color: $color2;
   color: $color3;
+  padding: 25px;
 
+}
+
+h1::first-letter,
+h2::first-letter{
+  color: $color4;
+  font-size: 125%;
+}
+
+h1,
+h2{
+  font-variant: small-caps;
 }
 
 .wrapper{
@@ -40,6 +66,9 @@ body :nth-child(odd){
   }
   .about {
     grid-template-columns: 2fr 1fr;
+  }
+  .contact{
+    grid-template-columns: 1fr 2fr;
   }
 }
 

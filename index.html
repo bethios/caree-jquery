@@ -1,42 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="styles/modal.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <title>Page Title</title>
+    <title>Caree Davis- Producer, Director</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
-    <header>
+    <header class="wrapper">
 
     </header>
 
+    <div id="resumeView" class="modal">
+        <div class="modal-content">
+            <form method="get" action="assets/CareeDavis3_2017.pdf">
+                <button class="btn btn-default download" type="submit" formtarget="blank">Download</button>
+            </form>
+            <i class="close ion-close-round"></i>
+            <iframe class="modal-content" src="https://docs.google.com/document/d/1H0zHH9oeHzVF7CYe2shSUgqIxAePAzPxaw0gG7jrw6Y/pub?embedded=true"></iframe>
+        </div>
+    </div>
+
     <div class="about wrapper">
         <div class="aboutBlurb">
+            <h1>Caree Davis</h1>
+            <h2>Producer, Director</h2>
             <p>Creative film, television producer/director who combines innovative ideas with the latest technology to
                 create content for digital, film, TV, and music industries. Specializing in documentary and entertainment
                 marketing material across multiple platforms including broadcast specials, live concerts and events,
                 branded and extended content, TV spots, promos, original web series, social media, press junkets,
                 interactive content, new media, home entertainment features and apps.
             </p>
+            <button class="btn btn-default" id="resumeOpen">View Resume</button>
+
         </div>
         <div class="careePhoto">
             <img src="assets/caree.jpeg">
         </div>
     </div>
 
-    <div>
-        <div class="theList">List of Logos</div>
-        <div class="artistList">List of Artists</div>
+    <div class="wrapper theList">
+        <div class="logos">
+            <h2>List of Logos</h2>
+        </div>
+        <div class="artistList">
+            <h2>List of Artists</h2>
+        </div>
     </div>
+
     <div class="work wrapper">
+        <h2>My Work</h2>
         <div class="movie">Movie Posters</div>
         <div class="tvMusic">TV Posters</div>
         <div class="themePark">Theme Park Stuff</div>
     </div>
 
     <div class="selectClips wrapper">
+        <div>
+            <h2>Select Clips</h2>
+            <p>Bladdy bladdy, important sounding stuff in here!</p>
+        </div>
         <div style="position:relative;height:0;padding-bottom:56.25%">
             <iframe class="clips" src="https://www.youtube.com/embed/ixZIt8sJRQ4?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
         </div>
@@ -60,19 +86,20 @@
         </div>
     </div>
 
-    <div class="resume wrapper">
-        <button id="resumeOpen">View Resume</button>
-        <div id="resumeView" class="modal">
-            <div class="modal-content">
-                <iframe src="https://docs.google.com/document/d/1H0zHH9oeHzVF7CYe2shSUgqIxAePAzPxaw0gG7jrw6Y/pub?embedded=true"></iframe>
-            </div>
-        </div>
-    </div>
-
     <div class="contact wrapper">
+        <div>
+            <h2>Contact</h2>
+            <button class="btn btn-default" id="resumeOpen">View Resume</button>
+        </div>
+        <div>
+            Lots of links and ways to contact
+        </div>
+
         <div class="contactInfo"></div>
         <div class="careePhoto"></div>
     </div>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

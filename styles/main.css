@@ -4,13 +4,34 @@
 body {
   margin: 0; }
 
-body :nth-child(even) {
-  background-color: #393d3f;
-  color: #f8f4e3; }
+header {
+  height: 60vh;
+  background-image: url("../assets/set.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 70%; }
 
-body :nth-child(odd) {
-  background-color: #706c61;
-  color: #f8f4e3; }
+.about,
+.work,
+.contact {
+  background-color: #393d3f;
+  color: #f8f4e3;
+  padding: 25px; }
+
+.theList,
+.selectClips {
+  background-color: #000f08;
+  color: #f8f4e3;
+  padding: 25px; }
+
+h1::first-letter,
+h2::first-letter {
+  color: #e5446d;
+  font-size: 125%; }
+
+h1,
+h2 {
+  font-variant: small-caps; }
 
 .wrapper {
   display: grid;
@@ -29,7 +50,10 @@ body :nth-child(odd) {
     grid-template-columns: repeat(2, 1fr); }
 
   .about {
-    grid-template-columns: 2fr 1fr; } }
+    grid-template-columns: 2fr 1fr; }
+
+  .contact {
+    grid-template-columns: 1fr 2fr; } }
 @media only screen and (min-width: 1224px) {
   .selectClips {
     grid-template-columns: repeat(3, 1fr); }

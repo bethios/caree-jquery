@@ -11,11 +11,23 @@
   overflow: auto;
 }
 
+.download{
+  display:inline;
+  float:left;
+  margin: 15px;
+}
+
+.download:hover{
+  background-color: $color4;
+  color: $color3
+}
+
 .close {
   color: $color1;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  padding: 15px;
 }
 
 .close:hover,
@@ -25,3 +37,21 @@
   cursor: pointer;
 }
 
+.modal-content{
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  border-color: $color1;
+  border-width: 1px;
+}
+
+.resumeView{
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-content{
+    width: 70vw;
+  }
+}
